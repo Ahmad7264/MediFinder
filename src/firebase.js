@@ -2,11 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAknAIzNd6WHagCkyB9S49JZa9AyE9yyaI",
-  authDomain: "medfinder-532c5.firebaseapp.com",
-  projectId: "medfinder-532c5",
-  appId: "1:333340883328:web:122e8578583bf9f999e965",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
+
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
