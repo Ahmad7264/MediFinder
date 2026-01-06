@@ -48,7 +48,7 @@ export default function Address() {
 
           <button
             type="submit"
-            className="w-full py-3 bg-emerald-500 text-black rounded-full font-medium"
+            className="w-full py-3 bg-emerald-500 text-black rounded-full font-medium cursor-pointer"
           >
             Confirm Order
           </button>

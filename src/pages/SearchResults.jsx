@@ -35,7 +35,7 @@ export default function SearchResults() {
 
             <button
               onClick={() => navigate("/medicine", { state: { medicine: m } })}
-              className="mt-4 px-4 py-2 bg-emerald-500 text-black rounded-full text-sm"
+              className="mt-4 px-4 py-2 bg-emerald-500 text-black rounded-full text-sm cursor-pointer"
             >
               View Details →
             </button>

@@ -131,7 +131,7 @@ export default function Login() {
             </div>
 
             {/* Submit */}
-            <button className="w-full py-3 rounded-lg bg-emerald-500 text-black font-medium hover:bg-emerald-400 transition">
+            <button className="w-full py-3 rounded-lg bg-emerald-500 text-black font-medium hover:bg-emerald-400 transition cursor-pointer">
               Sign In
             </button>
           </form>
@@ -147,14 +147,14 @@ export default function Login() {
           <div className="space-y-3">
             <button
               onClick={handleGoogleLogin}
-              className="w-full py-3 rounded-lg bg-white text-black text-sm font-medium hover:bg-gray-100 transition"
+              className="w-full py-3 rounded-lg bg-white text-black text-sm font-medium hover:bg-gray-100 transition cursor-pointer"
             >
               Continue with Google
             </button>
 
             <button
               onClick={handleFacebookLogin}
-              className="w-full py-3 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-500 transition"
+              className="w-full py-3 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-500 transition cursor-pointer"
             >
               Continue with Facebook
             </button>
@@ -163,7 +163,7 @@ export default function Login() {
           {/* Signup */}
           <p className="mt-6 text-sm text-gray-400 text-center">
             Don’t have an account?{" "}
-            <Link to="/signup" className="text-emerald-400 hover:underline">
+            <Link to="/signup" className="text-emerald-400 hover:underline cursor-pointer">
               Sign Up
             </Link>
           </p>

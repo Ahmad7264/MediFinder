@@ -20,14 +20,14 @@ export default function Order() {
         <div className="mt-8 flex justify-center gap-4">
           <Link
             to="/"
-            className="px-6 py-3 bg-emerald-500 text-black rounded-full font-medium hover:bg-emerald-400"
+            className="px-6 py-3 bg-emerald-500 text-black rounded-full font-medium hover:bg-emerald-400 cursor-pointer"
           >
             Go to Home
           </Link>
 
           <Link
             to="/search"
-            className="px-6 py-3 border border-emerald-400/60 text-emerald-400 rounded-full hover:bg-emerald-400/10"
+            className="px-6 py-3 border border-emerald-400/60 text-emerald-400 rounded-full hover:bg-emerald-400/10 cursor-pointer"
           >
             Search Again
           </Link>

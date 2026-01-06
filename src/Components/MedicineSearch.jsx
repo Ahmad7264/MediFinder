@@ -82,7 +82,7 @@ export default function MedicineSearch() {
           className="
             px-5 py-2 rounded-full text-sm font-medium
             bg-emerald-500 text-black
-            hover:bg-emerald-400 transition
+            hover:bg-emerald-400 transition cursor-pointer
           "
         >
           Search
@@ -119,4 +119,3 @@ export default function MedicineSearch() {
     </div>
   );
 }
-

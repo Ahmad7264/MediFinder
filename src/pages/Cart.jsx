@@ -62,7 +62,7 @@ export default function Cart() {
             <div className="mt-6 flex gap-4">
               <button
                 onClick={clearCart}
-                className="px-6 py-3 border border-red-400 text-red-400 rounded-full hover:bg-red-400/10"
+                className="px-6 py-3 border border-red-400 text-red-400 rounded-full hover:bg-red-400/10 cursor-pointer"
               >
                 Clear Cart
               </button>
@@ -77,7 +77,7 @@ export default function Cart() {
                     navigate("/login", { state: { fromOrder: true } });
                   }
                 }}
-                className="px-6 py-3 bg-emerald-500 text-black rounded-full font-medium"
+                className="px-6 py-3 bg-emerald-500 text-black rounded-full font-medium cursor-pointer"
               >
                 Place Order
               </button>

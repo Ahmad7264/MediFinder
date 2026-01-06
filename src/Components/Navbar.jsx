@@ -45,7 +45,7 @@ export default function Navbar() {
         </ul>
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-full border border-white/20 hover:border-emerald-400 transition"
+          className="p-2 rounded-full border border-white/20 hover:border-emerald-400 transition cursor-pointer"
         >
           {theme === "dark" ? (
             <Sun size={18} className="text-yellow-400" />
@@ -60,7 +60,7 @@ export default function Navbar() {
           <Link to="/cart" className="relative">
             <ShoppingCart
               size={20}
-              className="text-gray-300 hover:text-emerald-400 transition"
+              className="text-gray-300 hover:text-emerald-400 transition cursor-pointer"
             />
             {cart.length > 0 && (
               <span className="absolute -top-2 -right-2 bg-emerald-500 text-black text-xs font-semibold rounded-full px-2">
@@ -78,7 +78,7 @@ export default function Navbar() {
               </span>
               <button
                 onClick={logout}
-                className="text-gray-400 hover:text-red-400 transition text-xs"
+                className="text-gray-400 hover:text-red-400 transition text-xs cursor-pointer"
               >
                 Logout
               </button>
@@ -88,7 +88,7 @@ export default function Navbar() {
               {/* Sign In */}
               <Link
                 to="/login"
-                className="text-sm text-gray-300 hover:text-white transition"
+                className="text-sm text-gray-300 hover:text-white transition cursor-pointer"
               >
                 Sign In
               </Link>
@@ -96,7 +96,7 @@ export default function Navbar() {
               {/* Get Started */}
               <Link
                 to="/signup"
-                className="ml-1 px-4 py-2 rounded-md bg-emerald-500 text-black text-sm font-medium hover:bg-emerald-400 transition"
+                className="ml-1 px-4 py-2 rounded-md bg-emerald-500 text-black text-sm font-medium hover:bg-emerald-400 transition cursor-pointer"
               >
                 Get Started
               </Link>

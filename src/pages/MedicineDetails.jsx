@@ -120,14 +120,14 @@ export default function MedicineDetails() {
                 });
                 setShowSuccess(true);
               }}
-              className="flex items-center gap-2 px-8 py-3 bg-emerald-500 text-black rounded-full font-medium hover:bg-emerald-400"
+              className="flex items-center gap-2 px-8 py-3 bg-emerald-500 text-black rounded-full font-medium hover:bg-emerald-400 cursor-pointer"
             >
               Add to Cart
             </button>
 
             <button
               onClick={() => navigate("/")}
-              className="px-8 py-3 border border-emerald-400/60 text-emerald-400 rounded-full hover:bg-emerald-400/10"
+              className="px-8 py-3 border border-emerald-400/60 text-emerald-400 rounded-full hover:bg-emerald-400/10 cursor-pointer"
             >
               Continue Searching
             </button>
@@ -152,14 +152,14 @@ export default function MedicineDetails() {
             <div className="mt-6 flex gap-3 justify-center">
               <button
                 onClick={() => navigate("/cart")}
-                className="px-6 py-2 bg-emerald-500 text-black rounded-full font-medium"
+                className="px-6 py-2 bg-emerald-500 text-black rounded-full font-medium cursor-pointer"
               >
                 Go to Cart
               </button>
 
               <button
                 onClick={() => setShowSuccess(false)}
-                className="px-6 py-2 border border-emerald-400/60 text-emerald-400 rounded-full hover:bg-emerald-400/10"
+                className="px-6 py-2 border border-emerald-400/60 text-emerald-400 rounded-full hover:bg-emerald-400/10 cursor-pointer"
               >
                 Continue Shopping
               </button>
