@@ -78,7 +78,7 @@ export default function Login() {
   /* -------------------- UI -------------------- */
 
   return (
-    <div className="min-h-screen flex bg-[#070b0f] text-white mt-6">
+    <div className="min-h-screen flex dark:bg-[#070b0f] text-gray-900 dark:text-white mt-6">
       {/* ================= LEFT : LOGIN FORM ================= */}
       <div className="w-full md:w-1/2 flex items-center justify-center px-12">
         <div className="max-w-md w-full">

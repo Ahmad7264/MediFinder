@@ -22,7 +22,7 @@ export default function SearchResults() {
   }, [query]);
 
   return (
-    <div className="min-h-screen bg-[#070b0f] text-white px-6 pt-28">
+    <div className="min-h-screen dark:bg-[#070b0f] text-gray-900 dark:text-white px-6 pt-28">
       <h2 className="text-xl mb-6">Medicine Search</h2>
 
       <div className="grid md:grid-cols-4 gap-6">

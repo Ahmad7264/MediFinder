@@ -58,7 +58,7 @@ export default function Signup() {
   };
 
   return (
-    <div className="min-h-screen flex bg-[#070b0f] text-white mt-14">
+    <div className="min-h-screen flex dark:bg-[#070b0f] text-gray-900 dark:text-white mt-14">
       {/* LEFT SIGNUP FORM */}
       <div className="w-full md:w-1/2 flex items-center justify-center px-8">
         <div className="max-w-md w-full">

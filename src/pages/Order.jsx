@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Order() {
   return (
-    <div className="min-h-screen bg-[#070b0f] text-white flex items-center justify-center px-6">
+    <div className="min-h-screen dark:bg-[#070b0f] text-gray-900 dark:text-white flex items-center justify-center px-6">
       <div className="max-w-md w-full bg-white/5 border border-white/10 rounded-2xl p-10 text-center backdrop-blur">
         <CheckCircle size={56} className="text-emerald-400 mx-auto" />
 
@@ -12,7 +12,7 @@ export default function Order() {
         </h1>
 
         <p className="mt-3 text-gray-300 text-sm">
-          Your order has been placed successfully.  
+          Your order has been placed successfully.
           <br />
           This is a <b>dummy order</b> for academic demonstration only.
         </p>

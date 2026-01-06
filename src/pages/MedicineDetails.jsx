@@ -21,35 +21,29 @@ export default function MedicineDetails() {
   const [details, setDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    if (!medicineName) return;
+  const fetchMedicines = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `https://api.fda.gov/drug/label.json?search=${query}&limit=5`,
+        { signal: controller.signal }
+      );
+      const data = await res.json();
 
-    fetch(
-      `https://api.fda.gov/drug/label.json?search=openfda.brand_name:${medicineName}&limit=1`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setDetails(data.results?.[0]);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-  }, [medicineName]);
+      const meds =
+        data.results?.map(
+          (item) =>
+            item.openfda?.brand_name?.[0] || item.openfda?.generic_name?.[0]
+        ) || [];
 
-  if (!medicineName) {
-    return (
-      <div className="min-h-screen bg-[#070b0f] text-white flex items-center justify-center">
-        No medicine selected
-      </div>
-    );
-  }
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-[#070b0f] text-white flex items-center justify-center">
-        Loading medicine details…
-      </div>
-    );
-  }
+      setResults(meds.length ? [...new Set(meds)] : FALLBACK_MEDICINES);
+    } catch (e) {
+      console.error("API failed, using fallback");
+      setResults(FALLBACK_MEDICINES);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   /* 🔹 Extract API data safely */
   const generic = details?.openfda?.generic_name?.[0] || "Not Available";
@@ -71,7 +65,7 @@ export default function MedicineDetails() {
     : "Available";
 
   return (
-    <section className="min-h-screen bg-[#070b0f] text-white px-6 pt-28">
+    <section className="min-h-screen dark:bg-[#070b0f] text-gray-900 dark:text-white px-6 pt-28">
       <div className="max-w-4xl mx-auto">
         {/* Back */}
         <button

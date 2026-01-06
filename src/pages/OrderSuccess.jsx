@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function OrderSuccess() {
   return (
-    <div className="min-h-screen bg-[#070b0f] text-white flex items-center justify-center px-6">
+    <div className="min-h-screen dark:bg-[#070b0f] text-gray-900 dark:text-white flex items-center justify-center px-6">
       <div className="bg-white/5 border border-white/10 rounded-2xl p-10 text-center">
         <CheckCircle size={56} className="text-emerald-400 mx-auto" />
 

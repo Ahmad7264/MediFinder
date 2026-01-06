@@ -12,7 +12,7 @@ export default function Address() {
   };
 
   return (
-    <div className="min-h-screen bg-[#070b0f] text-white flex items-center justify-center px-6">
+    <div className="min-h-screen dark:bg-[#070b0f] text-gray-900 dark:text-white flex items-center justify-center px-6">
       <div className="bg-white/5 border border-white/10 rounded-2xl p-8 w-full max-w-md">
         <h2 className="text-2xl font-semibold text-emerald-400 text-center">
           Delivery Details

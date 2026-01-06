@@ -13,6 +13,7 @@ import Services from "./pages/Services";
 
 import Address from "./pages/Address";
 import OrderSuccess from "./pages/OrderSuccess";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </CartProvider>
     </AuthProvider>

@@ -11,7 +11,7 @@ export default function Cart() {
   const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
   return (
-    <div className="min-h-screen bg-[#070b0f] text-white px-6 pt-28">
+    <div className="min-h-screen dark:bg-[#070b0f] text-gray-900 dark:text-white px-6 pt-28">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-semibold text-emerald-400 mb-6">
           Your Cart
